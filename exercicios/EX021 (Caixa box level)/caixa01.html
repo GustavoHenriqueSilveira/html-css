@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo box level</title>
+    <style>
+        h1 { /*Box-level. Pode ser transformado em inline level utilizando "display = inline"*/
+            background-color: #d3d3d3;
+            height: 300px;
+            width: 300px;
+
+            border: 10px dashed #4a4d4d;
+            /*
+            border-width: 10px;
+            border-style: dashed;
+            border-color: #4a4d4d;
+            */
+
+            padding: 10px 20px 20px 10px;
+            /*
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            ou
+            padding: 10px; (Quando forem todas iguais).
+            padding: 10px 20px; (Cima e baixo = 10px;, esquerda e direita = 20px;).
+            */
+
+            margin: auto;
+            /*
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            ou
+            margin: 10px auto 10px auto; (Centralizado horizontal).
+            */
+
+            outline: 5px dashed darkorchid;
+            /*
+            outline-width: 20px;
+            outline-style: dashed;
+            outline-color: darkorchid;
+            */
+        }
+
+        a{ /*Inline-level. Pode ser transformado em box level utilizando "display = block"*/
+            border-width: 10px;
+            border-style: double;
+            border-color: #0000ff;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="https://www.youtube.com/watch?v=-CPoDvZLQ6k&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=25" target="blank">links são exemplos de caixas inline level.</a> Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

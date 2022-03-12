@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+.link {
+    background-image: linear-gradient(#ff2f97, #ff2f97);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+
+    transition: background-size 500ms;
+}
+
+.link:hover {
+    background-size: 100% 100%;
+    /*x% e y%*/
+    background-position-x: left;
+}
+body {
+    background-color: #000000;
+
+}
+
+span {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aliceblue;
+    font-weight: bolder;
+
+}

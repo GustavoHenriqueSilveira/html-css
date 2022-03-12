@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.text {
+    background: linear-gradient(90deg, #B33F00,#FF6B1A);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    filter: grayscale(100%);
+    transition: filter 800ms
+
+}
+
+.text:hover{
+    filter: grayscale(0%);
+}

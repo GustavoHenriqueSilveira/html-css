@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Icones/Mozilla Icon.ico" type="image/x-icon">
+    <title>Fontes nas CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url();
+        body {
+            font-family:'Courier New';
+            
+            /*Medidas absolutas:border: cm, mm, in, px(recomendado), pt, pc;
+
+            Medidas relativas:
+            en (recomendado), ex, rem, vw, vh, %
+            16px geralmente = 1en
+            */
+            font-size: 16px;
+
+            font-weight: 900;
+            /*normal, bold, bolder, ou por números, 100 ao 900, dependendo da fonte*/
+
+            font-style: italic;
+            /*Várias escolhas, oblique, italic */
+        }
+
+        h1{
+            
+            /* Font sem shorthand:
+
+            font-family:Cambria, Cochin, 'Times New Roman';
+            font-weight: bolder;
+            font-size: 3em;
+            font-size: italic;
+            
+            Com shorthand font:
+            
+            - font-style -> font-weight -> font-size -> font-family
+            */
+            font: italic bolder 3em 'Times New Roman';
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>&ltTrabalhando com fontes&gt</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure atque quos vitae, unde odio ipsum doloribus omnis voluptatibus assumenda reiciendis illum eveniet, temporibus incidunt repudiandae consectetur deleniti aliquid hic architecto.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aliquam cum harum culpa quod nemo nisi, perspiciatis qui iste repellat eligendi, repudiandae itaque inventore!</p>
+    <h2>Exercício</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae veritatis commodi architecto distinctio accusantium, at amet possimus enim non quis sed nobis sequi, iste porro quae ut ab vel veniam?</p>
+</body>
+</html>

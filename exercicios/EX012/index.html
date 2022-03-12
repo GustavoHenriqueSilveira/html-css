@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Icones/Mozilla Icon.ico" type="image/x-icon">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Abra esse site em vários dispositivos diferentes ou aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagensexercicio/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagensexercicio/foto-m.png" type="image/png">
+        <img src="Imagensexercicio/foto-g.png" alt="Imagem flexivel">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="Midias/Adventure_Mindsight.mp3" controls autoplay></audio>
+    <!--MP3; WAV; OGG-->
+    <audio preload="metadata" controls loop>
+        <source src="Midias/Adventure_Mindsight.mp3" type="audio/mpeg">
+        <source src="Midias/Adventure_Mindsight.ogg" type="audio/ogg">
+        <source src="Midias/Adventure_Mindsight.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio, <a href="Midias/Adventure_Mindsight.mp3">clique aqui para fazer o download.</a></p>
+    </audio>
+</body>
+</html>

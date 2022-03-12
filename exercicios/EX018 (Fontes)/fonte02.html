@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="../Icones/Mozilla Icon.ico" type="image/x-icon">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'love';
+            src: url(/Fontes/love\ larry.ttf) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+            @font-face {
+            font-family: 'nadall';
+            src: url(/Fontes/nadall.ttf) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+
+            /*Tipos de format():
+            -opentype (otf)
+            -truetype (ttf)
+            -embedded opentype
+            -truetype-aat (apple advanced typography)
+            -svg
+            */
+        }
+        body {
+            font-family: 'nadall';
+            font-size: 2em;
+        }
+        h1{
+            font-family: 'love', Times, serif;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet sed quasi illo impedit, mollitia culpa quam neque illum magni eligendi deleniti aliquam voluptate, officia aperiam quod. Eius ullam placeat similique!</p>
+</body>
+</html>
