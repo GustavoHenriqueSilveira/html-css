@@ -121,6 +121,23 @@ main p {
     line-height: 1em;
 }
 
+.return {
+    color: var(--cor1);
+    display: block;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+.return:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
 main img {
     width: 100%;
 }
