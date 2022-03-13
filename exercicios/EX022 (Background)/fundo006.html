@@ -10,19 +10,31 @@
     </title>
     <style>
         body {
+
+            /*
             height: 100vh;
             background-color: #000000;
             background-image: url('imagens-cap19/wallpaper002.jpg');
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+            */
+
+            /* 
+            Shorthand background
+            color > image > position > repeat > [size] > attachment
+            */
+
+            background: #000000 url('imagens-cap19/wallpaper002.jpg') center center / cover no-repeat fixed;
         }
 
         main {
             background-color: #ffffff;
-            width: 400px;
+            max-width: 500px;
             padding: 10px;
-            margin: auto;border: 1px solid #00008b;
+            margin: auto;
+            border: 1px solid #00008b;
             border-radius: 15px;
         }
     </style>
