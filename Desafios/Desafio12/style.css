@@ -34,8 +34,8 @@ header > h1 {
 }
 
 /*
-font-size: #vw; = view width
- É a porcentagem que ocupa o texto dependendo da largura do site, fazendo com que o texto adapte automaticamente. Não é igual media query mas é uma alternativa.
+    font-size: #vw; = view width
+    É a porcentagem que ocupa o texto dependendo da largura do site, fazendo com que o texto adapte automaticamente. Não é igual media query mas é uma alternativa.
 */
 
 header > p {
