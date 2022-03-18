@@ -12,9 +12,16 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        h1 {
+            padding: 10px;
+            text-align: center;
+            text-decoration: underline;
+        }
+
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -22,9 +29,37 @@
             padding: 10px;
         }
 
-        thead {
-            background-color: gray;
+        caption {
+            background-color: #808080;
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: #2e2e2e;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: #2e2e2e;
+            color: white;
+        }
+
+        tbody > tr:nth-child(odd) { /* (2n -1) */
+            background-color: #d3d3d3;
+            font-weight: bold;
+        }
+
+        tbody > tr:nth-child(even) { /* (2n) */
+            background-color: #ffa07a;
+            font-weight: bold;
+        }
+
+        th.pop {
+            width: 90px;
         }
 
         td.num {
@@ -35,11 +70,12 @@
 </head>
 <body>
 
-    <h1>Uso de tabelas grandes</h1>
+    <h1>Uso de tabelas grandes:</h1>
     
     <!--
         Anatomia para tabelas grandes
             Table
+                Caption = Legenda
                 THead
                     TR, TD, TH
                 TBody
@@ -49,11 +85,12 @@
     -->
 
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
 
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" class="pop">População</th>
             </tr>
 
         </thead>
@@ -198,11 +235,12 @@
         <tfoot>
 
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>213 317 639</strong></td>
             </tr>
 
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, obcaecati illo. Tenetur consequuntur qui, veritatis pariatur ut expedita consequatur dolorem quisquam quo. Tempore atque dolorem ullam excepturi fuga numquam culpa? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur perferendis cupiditate dolorem magni provident neque suscipit ipsum perspiciatis aliquid, voluptas id consectetur omnis veritatis quibusdam! Totam perferendis inventore cum architecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, illum. Quo est tempora saepe sed eaque doloremque assumenda eos amet iste aliquid ducimus delectus, veritatis id maiores. Incidunt, sed excepturi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, optio! Adipisci modi impedit ex culpa dolores voluptate, molestias atque molestiae, quam quae blanditiis, consequuntur in tenetur nulla vero reprehenderit mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam animi dicta amet vitae voluptatum delectus blanditiis, nemo molestiae asperiores? Repellendus necessitatibus minus consequatur nostrum recusandae vero sunt exercitationem ad sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam labore incidunt ducimus iure, aspernatur officiis doloribus laborum. Iure, illo! Perferendis assumenda tempore est vitae similique amet deleniti ex consequatur asperiores? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis similique odio quae minima, praesentium quam accusamus! Recusandae aspernatur odio amet inventore reiciendis voluptate consectetur voluptatibus, itaque molestias, quas vel quidem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem obcaecati unde repudiandae totam eveniet, natus id eius dignissimos nihil perferendis accusantium laudantium quisquam nemo. Ad autem perspiciatis ut reprehenderit labore? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo itaque veniam illo voluptate possimus nostrum recusandae est illum impedit, tempora ipsa consequatur vel asperiores ad eum. Dolor debitis quidem impedit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet ipsa autem alias sit minus officiis ipsum eos odio. Quis alias aliquid ipsam pariatur, a doloribus asperiores saepe natus cumque dolore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, tempora ipsam! Fugit, minus quae praesentium amet veritatis tempore. Sint reprehenderit, vero aut mollitia aliquid sed! Est error aspernatur alias recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quod obcaecati dolores, vel sit quas perspiciatis nostrum debitis quis, aspernatur sunt dolorem est reiciendis atque odio velit fugit esse distinctio. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, atque. Ea sed harum soluta incidunt maxime saepe, accusamus numquam ducimus autem itaque accusantium similique neque at expedita facilis totam consectetur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam saepe quas aspernatur reiciendis deserunt esse iure fuga magnam, laborum earum alias atque quae? Nesciunt laborum, iste nisi sapiente dolorem exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sapiente adipisci nemo voluptatem aliquam nostrum, sint eos nulla optio, eum cumque commodi assumenda officiis quibusdam quos asperiores reiciendis autem laborum.</p>
 </body>
 </html>
